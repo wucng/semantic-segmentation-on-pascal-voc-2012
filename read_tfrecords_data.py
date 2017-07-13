@@ -1,3 +1,9 @@
+"""
+__author__ = 'dengzelu'
+python version = 3.5.3
+tensorflow version = 1.1.0
+"""
+
 import tensorflow as tf
 
 
