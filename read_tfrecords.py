@@ -16,7 +16,7 @@ def read_tfrecords(filename_queue):
         height: int32 scalar Tensor, image's height
         width: int32 scalar Tensor, image's width
         uint8image: uint8 3-D (height, width, 3) Tensor, jpg image
-        annotation: unit8 2-D (height, width) Tensor, corresponding annotation, ranging [0, 20]
+        annotation: unit8 3-D (height, width, 1) Tensor, corresponding annotation, ranging [0, 20]
     """
     class ImageRecord(object):
         pass
