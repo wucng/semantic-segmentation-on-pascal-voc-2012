@@ -4,7 +4,7 @@
 # =====================================================================================================================
 # README
 # You need to change FLAGS parameters based on your own situation.
-# The following parameters work on my own mechine. 
+# The following parameters work on my own machine. 
 # After your decompress the VOCtrainval_11-May-2012.tar file, your parameters may very similar to mine.
 # The mode must either be training or validation, and this script will convert the images
 # and annotaions to TFRecord respectively.
