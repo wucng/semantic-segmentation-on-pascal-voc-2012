@@ -40,7 +40,7 @@ def read_tfrecords(filename_queue):
     result.filename = features['image/filename']
     result.uint8image = tf.image.decode_jpeg(features['image/encoded'], channels=3)
 
-    # Attention: bug, reshape must have int32 shape arguments, which can't be int64
+    # Attention: bug, reshape must have int32 shape arguments, which can't be int64 (the offical says both are OK)
     result.height = tf.cast(features['image/height'], tf.int32)
     result.width = tf.cast(features['image/width'], tf.int32)
     result.uint8annotation = tf.reshape(
