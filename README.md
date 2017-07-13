@@ -1,1 +1,1 @@
-# pascal-voc-2012-for-semantic-segmentation
+# semantic-segmentation-on-pascal-voc-2012
