@@ -47,5 +47,6 @@ def read_tfrecords(filename_queue):
         tf.decode_raw(features['image/annotation'], tf.uint8),
         tf.stack([result.height, result.width])
     )
-
+    result.uint8annotation = tf.expand_dims(result.uint8annotation, axis=2)
+    
     return result
